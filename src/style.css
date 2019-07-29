@@ -1,0 +1,97 @@
+html {
+  overflow: hidden;
+}
+
+:root {
+  --accent-color: rgba(68, 22, 99, 0.678);
+  --info-color: #56cc9d;
+  --secondary-color: rgba(165, 165, 165, 0.603);
+  --primary-color: rgb(183, 184, 183);
+}
+
+.app-position {
+  display: grid;
+  align-items: center;
+  height: 600px;
+  background-color: red;
+}
+
+.channels-header {
+  margin: 30px 20px 0;
+  color: rgba(245, 238, 238, 0.726);
+  height: 40px;
+}
+
+.user-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  height: 100%;
+  color: #fff !important;
+}
+.user-form-container h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.user-form {
+  border-bottom: solid #fff 3px;
+  background: transparent;
+  border: 0;
+  border-bottom: solid #fff 3px;
+  color: #fff;
+}
+.select-channel {
+  width: 500px;
+  background-color: rgba(245, 238, 238, 0.726);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--primary-color);
+}
+.select-channel h2 {
+  color: var(--accent-color);
+}
+
+.channels-list li {
+  list-style: none;
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.active {
+  color: var(--info-color);
+}
+
+.typing-users {
+  overflow-x: auto;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+
+.typing-users span {
+  height: 30px;
+  color: var(--primary-color);
+  margin-right: 15px;
+}
+
+.typing-users .typing-label {
+  color: var(--info-color);
+  font-weight: bolder;
+}
+
+.new-message {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background: red;
+  margin-bottom: 5px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
