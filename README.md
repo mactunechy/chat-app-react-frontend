@@ -1,20 +1,20 @@
-## Frontend react app for the fullstack Mern stack chat app
 
-###Stack
+##Frontend React app for the fullstack chat application
 
-```
-React
-Context API for state management
-socket.io-client
-react-string for animations
-
+##Stack
 
 ```
+React.js
+Context API for statement
+Socke.i-client
+react-string
 
-##ScreenShots
+```
 
-![Shot1](screenshots/shot1.png)
+###Screenshots
+![shot1](screenshots/shot1.png)
 
-![Shot1](screenshots/shot2.png)
+![shot2](screenshots/shot2.png)
 
-![Shot1](screenshots/shot3.png)
+![shot3](screenshots/shot3.png)
+
