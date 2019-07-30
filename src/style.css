@@ -91,7 +91,7 @@ a {
   height: 7px;
   width: 7px;
   background: red;
-  margin-bottom: 5px;
+  margin: 7px 10px;
   border: 1px solid red;
   border-radius: 50%;
 }
