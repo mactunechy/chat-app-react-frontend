@@ -19,8 +19,9 @@ const Navbar = props => {
                     onClick={() => subscribeToRoom(room)}
                   >
                     {" "}
-                    # {room.name} <span className="new-message" />
+                    # {room.name}
                   </a>
+                  <span className="new-message float-right" />
                 </li>
               ))}
             </ul>

@@ -7,7 +7,6 @@ const Main = props => {
   return (
     <MyContext.Consumer>
       {({ currentRoom }) => {
-        console.log(currentRoom);
         return currentRoom ? (
           <div className="main">
             <Typing />

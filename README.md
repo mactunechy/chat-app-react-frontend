@@ -1,3 +1,4 @@
+
 ##Frontend React app for the fullstack chat application
 
 ##Stack
@@ -16,7 +17,4 @@ react-string
 ![shot2](screenshots/shot2.png)
 
 ![shot3](screenshots/shot3.png)
-
-
-
 

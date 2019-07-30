@@ -19,7 +19,6 @@ class MessageList extends Component {
     return (
       <MyContext.Consumer>
         {({ messages }) => {
-          console.log("messages: ", messages);
           return messages.map((message, index) => (
             <Message
               key={index}

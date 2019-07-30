@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import MyContext from "./context";
 import socketIO from "socket.io-client";
 import UserForm from "./components/UserForm";
+import notificationSound from "./components/sounds/unplug.oga";
 
 class App extends Component {
   constructor() {
@@ -12,7 +13,8 @@ class App extends Component {
       messages: [],
       user: "",
       channels: [],
-      currentChannel: null
+      currentChannel: null,
+      notify: false
     };
   }
   componentDidMount() {
@@ -29,7 +31,6 @@ class App extends Component {
   };
   getRoomMessages = id => {
     this.socket.on("room-messages", messages => {
-      console.log("called");
       this.setState({ messages });
     });
   };
@@ -39,8 +40,15 @@ class App extends Component {
     });
   };
   getSelectedChannel = () => {
-    this.socket.on("get-selected-channel", channel => {
-      this.setState({ currentChannel: channel, messages: channel.messages });
+    this.socket.on("get-selected-channel", (channel, newMessage) => {
+      this.setState({
+        currentChannel: channel,
+        messages: channel.messages,
+        notify: newMessage ? true : false
+      });
+      if (newMessage) {
+        setTimeout(() => this.setState({ notify: false }), 500);
+      }
     });
   };
 
@@ -68,6 +76,7 @@ class App extends Component {
   render() {
     return (
       <div className="app-center">
+        {this.state.notify && <audio src={notificationSound} autoPlay />};
         {this.state.user.trim().length === 0 ? (
           <UserForm setUser={user => this.setState({ user })} />
         ) : (
