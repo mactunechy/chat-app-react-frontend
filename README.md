@@ -1,17 +1,22 @@
 
-##Frontend React app for the fullstack chat application
+# Realtime web chat application
+an application where users can signup with any username and start chatting
 
-##Stack
+## user stories
+1. user can login with a username
+2. user can create a room
+3. user can send and receive messages in different rooms
 
-```
-React.js
-Context API for statement
-Socke.i-client
-react-string
 
-```
+## Dependencies
+- React.js
+- Context API for statement
+- Socket.i0-client
+- react-string
 
-###Screenshots
+
+
+## Screenshots
 ![shot1](screenshots/shot1.png)
 
 ![shot2](screenshots/shot2.png)
