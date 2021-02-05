@@ -14,7 +14,8 @@ an application where users can signup with any username and start chatting
 - Socket.i0-client
 - react-string
 
-
+## Sample video
+![preview](https://www.loom.com/share/c6b843018e504ff285c6390b34868bc7)
 
 ## Screenshots
 ![shot1](screenshots/shot1.png)
